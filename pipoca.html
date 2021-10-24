@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+
+        #player {
+           display: none;
+        }
+
+        .box-content {
+            background-image: url(assets/images/Wave.svg);
+            background-size: cover;
+            background-position: center center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+        }
+
+        .dance-floor {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+            background-image: url(assets/images/background.png);
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            padding: 40px;
+        }
+
+
+    </style>
+</head>
+<body class="box-content">
+
+    <audio id="player" controls="controls" loop="loop" autoplay="autoplay" src="assets/audio/yamyam.mp3"></audio>
+
+        <div class="content">
+            <h1>WELCOME TO THE PARTY! JOIN TO US! :)</h1>
+            </div>
+    </div>
+
+    <div class="dance-floor">
+    <img class="dance1" src="assets/images/mona-china.gif" alt="">
+    <img class="dance2" src="assets/images/pepe.gif" alt="">
+    <img class="dance3" src="assets/images/kitty.gif" alt="">
+    </div>
+    <script>
+        var audio = document.getElementById("player");
+        audio.volume = 0.1;
+      </script>
+</body>
+</html>
